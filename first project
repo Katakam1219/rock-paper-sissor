@@ -1,0 +1,18 @@
+import random
+print("Rock is 0,Paper is 1,Scissor is 2")
+user=int(input("enter your choice: "))
+if user>2 or user<0:
+    print("it is a invalid number,\n you lose")
+else:
+    computer=random.randint(0,2)
+    print(f"computer choice: {computer} ")
+    if user == computer:
+       print("its a draw")
+    elif user==0 and computer==2:
+        print("you won")
+    elif computer ==0 and user==2:
+        print("you lose")
+    elif computer>user:
+        print("you lose")
+    elif user>computer:
+        print("you win")
